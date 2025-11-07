@@ -1,0 +1,1 @@
+//Regras de resposta do chatbot
