@@ -1,12 +1,50 @@
-<!-- Página principal do chatbot -->
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Página Inicial</title>
+    <title>Conheça o Botify!</title>
+    <meta name="description" content="Conheça o Botify, um chatbot ágil e intuitivo para respostas rápidas.">
+    <link rel="icon" href="/public/imgs/icon.svg" type="image/svg+xml">
+    <link rel="stylesheet" href="/public/styles/main.css">
 </head>
 <body>
+    <header>
+        <img src="/public/imgs/logo.svg" alt="Logo do Botify" class="logo">
+    </header>
+
+    <main>
+        <section class="technologies-section">
+            <h2>Tecnologias</h2>
+            <div class="icons-container">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-original.svg" alt="HTML5" class="icon" />
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/css3/css3-plain-wordmark.svg" alt="CSS3" class="icon" />
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-plain.svg" alt="JavaScript" class="icon" />
+            </div>
+        </section>
+
+        <section class="about-section">
+            <h2>Conheça o Botify!</h2>
+            <p>Este projeto é um chatbot ágil e intuitivo, criado para oferecer uma interação automatizada e eficiente com os usuários. Sua principal missão é proporcionar respostas rápidas e precisas a perguntas frequentes, otimizando a comunicação e garantindo um atendimento ágil.</p>
+            <p>Com base em regras e comandos simples, o chatbot entende e responde em tempo real, simulando conversas naturais. Sua estrutura foi projetada para garantir uma experiência fluída, sem interrupções, tornando a interação mais dinâmica e agradável.</p>
+        </section>
+
+        <section class="chat-section">
+            <h2 class="chat-title">Botify</h2>
+            <div class="chat-container">
+                <div id="chat-messages" aria-live="polite">
+                </div>
+            </div>
+            
+            <div id="chat-options"></div>
+        </section>
+    </main>
+
+    <footer>
+        <p>Desenvolvido por Gabrielly Ferreira</p>
+        <p>&copy; 2025 Botify</p>
+    </footer>
     
+    <script type="module" src="/public/js/app.js"></script>
 </body>
 </html>
