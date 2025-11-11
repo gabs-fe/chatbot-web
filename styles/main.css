@@ -89,9 +89,11 @@ main {
     transform: scale(1.2);
     transition: transform 0.3s ease;
 }
+
 .chat-section {
-    width: 500px;
-    max-width: 100%;
+    width: 100%;
+    max-width: 500px;
+    margin: 2rem 0;
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
     border: 1px solid var(--secondary-color);
     display: flex;
@@ -200,4 +202,40 @@ footer{
     background-color: var(--secondary-color);
     color: var(--text-color);
     margin-top: 2rem;
+}
+
+@media (max-width: 768px) {
+    .logo {
+        width: 15rem;
+    }
+
+    h1 {
+        font-size: 2rem;
+    }
+
+    .about-section h2 {
+        font-size: 1.75rem;
+    }
+
+    .about-section p {
+        font-size: 1rem;
+        line-height: 1.5;
+    }
+
+    .about-section,
+    .technologies-section,
+    .chat-section {
+        width: 90%;
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+
+    .icon {
+        width: 3rem;
+    }
+
+    .botao-opcao {
+        padding: 10px 16px;
+        font-size: 0.9rem;
+    }
 }
